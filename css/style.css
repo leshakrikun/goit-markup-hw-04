@@ -390,7 +390,12 @@
   border: 1px solid currentColor;
   border-radius: 4px;
   margin-right: 30px;
+<<<<<<< HEAD
 }.icon-square:hover,
+=======
+}
+.icon-square:hover,
+>>>>>>> 43e49a2776e15cec40312e2e8696940236c5e535
 .icon-square:focus {
 border: 1px solid #2196F3;
 }
