@@ -7,6 +7,7 @@
     --third-background-color: #fff;   
     --icon-color: #000; 
     --team-color: #F5F4FA;
+    --link-color: #AFB1B8;
     }
     body {
         
@@ -152,6 +153,7 @@
     }
     .list-advantages {
         display: flex;
+        justify-content: space-between;
     }
     .desc-advantages {
         padding-bottom: 0;
@@ -174,9 +176,7 @@
         text-transform: uppercase;
         margin-bottom: 10px;
     }
-    .list-advantages>li:not(:last-child) {
-        margin-right: 30px;
-    }
+
     .our-advantages {
         padding-bottom: 94px;
         padding-top: 94px;
@@ -231,7 +231,11 @@
     }
     .team-memeber {
         background-color: var(--third-background-color);
-        border-radius: 0px 0px 4px 4px;    
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+                    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                    0px 1px 3px 0px rgba(0, 0, 0, 0.12)
     }
     .all-team>li:last-child {
         margin-right: 0;
@@ -251,7 +255,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
         color: var(--primary-text-color);
     }
    
@@ -274,9 +278,32 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
-   
     .clock::before{
-        background-image: url( ../img/symbol-defs.svg#icon-clock);
+        background-image: url( ../img/optymizes_svg/clock.svg);
+        display: block;
+        content: "";
+        contain: content;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 55px;
+        background-color: var(--team-color); 
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .astronaut::before{
+        background-image: url( ../img/optymizes_svg/astronaut.svg);
+        display: block;
+        content: "";
+        contain: content;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 55px;
+        background-color: var(--team-color); 
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .diagram::before{
+        background-image: url( ../img/optymizes_svg/diagram.svg);
         display: block;
         content: "";
         contain: content;
@@ -440,13 +467,36 @@ border: 1px solid #2196F3;
     margin-right: 10px;
     fill: currentColor;
 }
-.icon-smartphone:hover,
-.icon-smartphone:focus,
-.icon-envelope:hover,
-.icon-envelope:focus{
-    fill: currentColor;
-}
 
+.social-block {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+    background-color: var(--third-background-color);
+    color: var(--link-color);
+    background-position: center; 
+    margin-right: 6px;  
+}
+.social-link:last-child {
+margin-right: 0;
+}
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-color);
+}
+.icon-social {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;   
+}
 footer  .icon {
     color: var(--third-background-color);  
 }
