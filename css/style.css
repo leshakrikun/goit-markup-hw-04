@@ -347,7 +347,7 @@
         letter-spacing: 0.03em;
         padding: 6px 22px;
         text-align: center;
-        background-color: #f5f4fa;
+        background-color: var(--team-color);
         border-radius: 4px;
     }
     .button-filter:hover,
@@ -376,10 +376,15 @@
         margin-top: -30px;
     }
     .one-work {
-        background: #FFFFFF;
+        background: var(--third-background-color);
         margin-left: 30px;
         margin-top: 30px;
     }
+    .one-work:hover,
+    .one-work:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
     .projects-item {
         padding: 20px 24px;
         border: 1px solid #EEEEEE;   
@@ -389,6 +394,7 @@
         margin: 0;
         line-height: 30px;
         font-size: 16px;
+        color: var(--primary-text-color);
     }
     .img-advertisment {
         display: block;
@@ -426,31 +432,53 @@
     display: block;
 }
 .icon-clients {
+    display: inline-flex;
+    
+    fill: currentColor;
+}
+.first {
     width: 44.2px;
     height: 48.6px;
-    justify-content: center;
-    align-items: center;
-    fill:#afb1b8;
 }
-.icon-clients:hover,
-.icon-clients:focus{
-    fill:#2196F3;
+.second {
+    width: 40px;
+    height: 52px;
 }
-
+.third {
+    width: 41px;
+    height: 42px;
+}
+.forth {
+    width: 79.6px;
+    height: 42px;
+}
+.fifth {
+    width: 59px;
+    height: 47px;
+}
+.sixth {
+    width: 88.5px;
+    height: 45.5px;
+}
 .square {
    display: flex;
-   color: #afb1b8;
    justify-content: space-between;
 }
-.icon-square{
-  padding: 17.5px 61px;
-  border: 1px solid currentColor;
-  border-radius: 4px;
-  
+.icon-square {
+  border: 1px solid var(--link-color);
+  border-radius: 4px; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: var(--third-background-color);
+  color: var(--link-color);
 }
 .icon-square:hover,
 .icon-square:focus {
-border: 1px solid #2196F3;
+border: 1px solid var(--accent-color);
+color: var(--accent-color);
 }
 .square>li:last-child {
     margin-right: 0;
@@ -489,7 +517,8 @@ margin-right: 0;
 }
 .social-link:hover,
 .social-link:focus {
-    color: var(--accent-color);
+    color: var(--third-background-color);
+    background-color: var(--accent-color);
 }
 .icon-social {
     display: block;
@@ -502,7 +531,32 @@ footer  .icon {
 }
 footer {
     background-color: var(--secondary-background-color);
-    display: block;
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+footer .container {
+    display: flex;
+}
+footer .social-block {
+    margin-top: 12px;
+    margin-left: 38px;
+}
+footer .social-link {
+    background-color:rgba(255,255,255,0.1);
+    color:var(--third-background-color); 
+}
+footer .social-link:hover,
+footer .social-link:focus {
+    color: var(--third-background-color); ;
+    background-color: var(--accent-color);
+}
+.footer-block {
+    width: 231px;   
+}
+.join {
+    color: var(--third-background-color);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
