@@ -54,7 +54,8 @@
         align-items: center;
         margin-left: auto;
     }
-    .contact:hover{
+    .contact:hover,
+    .contact:focus {
         color: var(--accent-color);
     }
     .nav-link {
@@ -109,6 +110,8 @@
         color: var(--primary-text-color);
         align-items: center;
         display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .hero {
         text-transform: uppercase;
@@ -185,6 +188,7 @@
         display: block;
         padding-bottom: 94px;
         justify-content: center;
+        background-color: var(--team-color);
     }
     .section-title {
         font-size: 36px;
@@ -193,7 +197,7 @@
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
         text-align: center;
-        padding-bottom: 94px;
+        margin-bottom: 50px;
     }
     .our-team {
         color: var(--team-color);
@@ -379,12 +383,15 @@
         background: var(--third-background-color);
         margin-left: 30px;
         margin-top: 30px;
+      
     }
-    .one-work:hover,
-    .one-work:focus {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .one-work-link:focus,
+    .one-work-link:hover {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
     }
-
     .projects-item {
         padding: 20px 24px;
         border: 1px solid #EEEEEE;   
@@ -415,7 +422,6 @@
         color: rgba(255,255,255,0.6);
         margin-top: 12px;
         margin-bottom: 0;
-
     }
 .clients {
     padding-top: 94px;
@@ -433,7 +439,6 @@
 }
 .icon-clients {
     display: inline-flex;
-    
     fill: currentColor;
 }
 .first {
@@ -495,7 +500,6 @@ color: var(--accent-color);
     margin-right: 10px;
     fill: currentColor;
 }
-
 .social-block {
     margin-left: 32px;
     margin-right: 32px;
@@ -559,4 +563,9 @@ footer .social-link:focus {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
