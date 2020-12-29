@@ -10,7 +10,6 @@
     --link-color: #AFB1B8;
     }
     body {
-        
         background-color: var(--primary-background-color);
         color: var(--primary-text-color);
         font-family: 'Roboto', sans-serif;
@@ -188,7 +187,7 @@
         display: block;
         padding-bottom: 94px;
         justify-content: center;
-        background-color: var(--team-color);
+        
     }
     .section-title {
         font-size: 36px;
@@ -200,9 +199,9 @@
         margin-bottom: 50px;
     }
     .our-team {
-        color: var(--team-color);
         padding-top: 94px;
         padding-bottom: 94px;
+        background-color: var(--team-color);
     }
     .section-team {
         font-size: 36px;
